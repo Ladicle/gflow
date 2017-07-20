@@ -1,0 +1,21 @@
+{
+    "memo": "412a4a8202072dc73711c23e356abcb80f15bca70997867eacedf31dfe7d41bc",
+    "projects": [
+        {
+            "name": "golang.org/x/net",
+            "branch": "master",
+            "revision": "5d0d7096b5f2ef7ba83f319c07ef63989a1c6f91",
+            "packages": [
+                "context"
+            ]
+        },
+        {
+            "name": "golang.org/x/sync",
+            "branch": "master",
+            "revision": "f52d1811a62927559de87708c8913c1650ce4f26",
+            "packages": [
+                "errgroup"
+            ]
+        }
+    ]
+}
