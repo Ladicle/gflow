@@ -1,7 +1,6 @@
 package gflow
 
 import (
-	"log"
 	"sync"
 )
 
@@ -37,7 +36,6 @@ type Task struct {
 // Ready is function to wait dependency tasks are completed.
 func (t Task) ready() {
 	if t.depWg != nil {
-		log.Printf("%s wait dependency tasks", t.Name)
 		t.depWg.Wait()
 	}
 }

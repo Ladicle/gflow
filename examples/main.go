@@ -25,7 +25,8 @@ func main() {
 	t3 := gflow.NewTask("task3", printRunner{message: "task3"}, &t5, &t4)
 	t1 := gflow.NewTask("task1", printRunner{message: "task1"}, &t2, &t3)
 
-	w := gflow.NewWorkflow(&t1, &t2, &t3, &t4, &t5)
+	w := gflow.NewWorkflow("Print workflow", &t1, &t2, &t3, &t4, &t5)
+	w.PrintTasks()
 	if err := w.Start(); err != nil {
 		log.Fatal(err)
 	}
